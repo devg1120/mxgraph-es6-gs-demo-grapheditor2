@@ -1,4 +1,9 @@
- --depend--
+
+npm run dev      OK
+npm run build    OK
+_start_httpd.sh   OK
+
+--depend--
  "dependencies": {
     "mxgraph-es6-gs": "https://github.com/devg1120/mxgraph-es6-gs"
  }
@@ -7,10 +12,20 @@
 export default  {
   root: 'src/grapheditor'
 }
------------------------------
+-----------------------------  dev
+rm yarn.lock
+yarn
 
- pnpm i
- npm run build
+npx vite -v
+vite/5.4.19 linux-x64 node-v20.11.1
+
+npm run dev
+open http://127.0.0.1
+
+---------------------------------  prod
+
+yarn
+npm run build
 
 cd src/grapheditor
 ./_dist_set.sh
