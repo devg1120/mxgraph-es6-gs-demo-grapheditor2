@@ -7,9 +7,11 @@
 //import * as m from "../../../../dist/mxgraph.es.js";
 import * as m from "mxgraph-es6-gs";
 import { Editor } from "./Editor.js";
+import { OpenFile } from "./Editor.js"; //GUSA
 import { FilenameDialog } from "./Editor.js";
 import { OutlineWindow } from "./Dialogs.js";
 import { LayersWindow } from "./Dialogs.js";
+import { OpenDialog } from "./Dialogs.js"; //GUSA
 
 /*
 export function Actions(editorUi) {
